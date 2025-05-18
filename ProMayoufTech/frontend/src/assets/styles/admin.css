@@ -1,0 +1,134 @@
+/* Admin Panel Styles */
+
+/* Admin Sidebar */
+.admin-sidebar {
+  transition: all 0.3s ease;
+  position: sticky;
+  top: 1rem;
+}
+
+.admin-sidebar .list-group-item {
+  border-left: 3px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.admin-sidebar .list-group-item:hover {
+  background-color: #f8f9fa;
+  border-left-color: #003b5c;
+}
+
+.admin-sidebar .list-group-item.active {
+  background-color: #003b5c;
+  color: white;
+  border-left-color: #003b5c;
+  border-color: #003b5c;
+}
+
+.admin-sidebar .card-header {
+  background-color: #003b5c;
+}
+
+/* Admin Dashboard Cards */
+.admin-card {
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  border: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.admin-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.admin-card .card-header {
+  font-weight: 600;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Admin Form Controls */
+.admin-form .form-control,
+.admin-form .form-select {
+  border-radius: 4px;
+  border: 1px solid #ced4da;
+  padding: 0.7rem 1rem;
+}
+
+.admin-form .form-control:focus,
+.admin-form .form-select:focus {
+  border-color: #003b5c;
+  box-shadow: 0 0 0 0.25rem rgba(0, 59, 92, 0.25);
+}
+
+.admin-form label {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+/* Admin Tables */
+.admin-table {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.admin-table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.admin-table .table-action {
+  width: 100px;
+}
+
+/* Admin Stats and Charts Section */
+.admin-stats .card {
+  height: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border: none;
+}
+
+.admin-stats .card-header {
+  background-color: white;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Admin Alert Cards */
+.admin-alert-card {
+  border-left: 4px solid #ffc107;
+  background-color: #fff8e1;
+}
+
+.admin-alert-card.critical {
+  border-left-color: #dc3545;
+  background-color: #fff5f5;
+}
+
+.admin-alert-card.success {
+  border-left-color: #28a745;
+  background-color: #f0fff4;
+}
+
+/* Animation for dropdown menu */
+.animated {
+  animation-duration: 0.3s;
+  animation-fill-mode: both;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slideIn {
+  animation-name: slideIn;
+} 
